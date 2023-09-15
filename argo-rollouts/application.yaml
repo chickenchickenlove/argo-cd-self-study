@@ -1,0 +1,20 @@
+# https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-rollouts
+  namespace: argocd
+  labels:
+    name: argou-rollouts
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:chickenchickenlove/argo-cd-self-study.git
+    targetRevision: main
+    path: argo-rollouts/manifest/
+  destination:
+    # cluster API URL
+    server: https://kubernetes.default.svc
+    namespace: argo-rollouts
+  syncPolicy:
+    automated: {}
