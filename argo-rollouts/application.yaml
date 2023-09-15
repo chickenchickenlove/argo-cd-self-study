@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:chickenchickenlove/argo-cd-self-study.git
+    repoURL: https://github.com/chickenchickenlove/argo-cd-self-study.git
     targetRevision: main
     path: argo-rollouts/manifest/
   destination:
