@@ -1,0 +1,33 @@
+namespaceOverride: prometheus
+fullnameOverride: prometheus-operator
+
+defaultRules:
+  create: false
+manager:
+  enabled: false
+kubeApiServer:
+  enabled: false
+kubelet:
+  enabled: false
+kubeControllerManager:
+  enabled: false
+coreDns:
+  enabled: false
+kubeDns:
+  enabled: false
+kubeEtcd:
+  enabled: false
+kubeScheduler:
+  enabled: false
+kubeProxy:
+  enabled: false
+prometheusOperator:
+  enabled: true
+grafana:
+  enabled: true
+kubeStateMetrics:
+  enabled: true
+nodeExporter:
+  enabled: true
+prometheus:
+  enabled: true
